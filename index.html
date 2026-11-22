@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Croc Rush TV؛ ویدیوهای کوتاه، طنز و ماجراجویی‌های بامزه.">
+  <meta name="theme-color" content="#101712">
+  <title>Croc Rush TV | ویدیوهای کوتاه و سرگرم‌کننده</title>
+  <style>
+    :root{--bg:#0d130f;--panel:#151f18;--panel2:#1d2a20;--green:#9be15d;--lime:#c7ff83;--text:#f4f7f1;--muted:#aab6aa;--line:#2b3b2e}
+    *{box-sizing:border-box}
+    body{margin:0;background:radial-gradient(circle at 85% -10%,#263b24 0,transparent 34%),var(--bg);color:var(--text);font-family:Tahoma,Arial,sans-serif;line-height:1.7}
+    a{color:inherit;text-decoration:none}
+    .wrap{width:min(1100px,92%);margin:auto}
+    header{position:sticky;top:0;z-index:5;background:#0d130feF;backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+    .nav{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:13px 0}
+    .brand{display:flex;align-items:center;gap:10px;font-weight:900;font-size:1.1rem}
+    .logo{display:grid;place-items:center;width:42px;height:42px;border-radius:14px;background:linear-gradient(135deg,var(--lime),#4c9c36);color:#10200d;font-size:24px}
+    .navlinks{display:flex;gap:18px;color:var(--muted);font-size:.92rem}
+    .navlinks a:hover{color:var(--lime)}
+    .hero{padding:54px 0 34px;display:grid;grid-template-columns:1.15fr .85fr;gap:28px;align-items:center}
+    .eyebrow{color:var(--lime);font-weight:bold;font-size:.88rem}
+    h1{font-size:clamp(2rem,5vw,3.6rem);line-height:1.2;margin:10px 0 14px}
+    .hero p{color:var(--muted);max-width:570px}
+    .actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:22px}
+    .btn{display:inline-block;padding:11px 18px;border-radius:12px;font-weight:bold;background:var(--green);color:#13200f}
+    .btn.secondary{background:var(--panel2);border:1px solid var(--line);color:var(--text)}
+    .hero-art{min-height:245px;border:1px solid #49643b;border-radius:26px;background:linear-gradient(145deg,#294728,#132016 70%);display:grid;place-items:center;position:relative;overflow:hidden}
+    .hero-art .croc{font-size:clamp(6rem,16vw,10rem);filter:drop-shadow(0 18px 16px #0008)}
+    .bubble{position:absolute;background:#0d130fdd;border:1px solid #527344;border-radius:14px;padding:8px 12px;font-size:.85rem}
+    .bubble.one{top:18px;right:18px}.bubble.two{bottom:18px;left:18px}
+    section{padding:22px 0 34px}
+    .section-head{display:flex;justify-content:space-between;align-items:end;gap:12px;margin-bottom:16px}
+    h2{margin:0;font-size:1.45rem}
+    .muted{color:var(--muted);font-size:.9rem}
+    .tools{display:flex;gap:10px;flex-wrap:wrap;margin:14px 0 18px}
+    input{background:var(--panel);border:1px solid var(--line);color:var(--text);border-radius:12px;padding:11px 13px;font:inherit;min-width:210px;flex:1}
+    .chips{display:flex;gap:8px;flex-wrap:wrap}
+    .chip{border:1px solid var(--line);background:var(--panel);color:var(--muted);border-radius:999px;padding:8px 13px;cursor:pointer;font:inherit}
+    .chip.active,.chip:hover{background:#294326;color:var(--lime);border-color:#527344}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .card{background:var(--panel);border:1px solid var(--line);border-radius:18px;overflow:hidden;transition:.2s}
+    .card:hover{transform:translateY(-3px);border-color:#63894f}
+    .thumb{aspect-ratio:16/9;background:linear-gradient(135deg,#294728,#17231a);display:grid;place-items:center;font-size:3.4rem;position:relative}
+    .play{position:absolute;display:grid;place-items:center;width:48px;height:48px;border-radius:50%;background:#0d130fdd;border:1px solid #b8f58b;color:var(--lime);font-size:20px}
+    .cardbody{padding:13px}
+    .card h3{font-size:1rem;margin:0 0 5px}
+    .tag{color:var(--lime);font-size:.78rem}
+    .empty{display:none;padding:22px;text-align:center;color:var(--muted);background:var(--panel);border-radius:14px}
+    .about{background:linear-gradient(120deg,#17251a,#111a13);border:1px solid var(--line);border-radius:20px;padding:22px}
+    footer{border-top:1px solid var(--line);padding:25px 0;color:var(--muted);font-size:.86rem}
+    footer .foot{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap}
+    @media(max-width:760px){.hero{grid-template-columns:1fr;padding-top:34px}.hero-art{min-height:190px}.grid{grid-template-columns:repeat(2,1fr)}.navlinks{gap:10px;font-size:.8rem}}
+    @media(max-width:480px){.grid{grid-template-columns:1fr}.navlinks a:nth-child(2){display:none}.section-head{align-items:start;flex-direction:column}}
+  </style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#"><span class="logo">🐊</span><span>CROC RUSH <span style="color:var(--lime)">TV</span></span></a>
+    <nav class="navlinks"><a href="#videos">ویدیوها</a><a href="#about">درباره ما</a><a href="#youtube">یوتیوب</a></nav>
+  </div>
+</header>
+<main class="wrap">
+  <section class="hero">
+    <div>
+      <div class="eyebrow">دنیای کلیپ‌های کوتاه و بامزه</div>
+      <h1>آماده‌ای برای یک<br><span style="color:var(--lime)">ماجرای کروکودیلی؟</span></h1>
+      <p>ویدیوهای کوتاه، لحظه‌های خنده‌دار و ماجراهای غیرمنتظره را در Croc Rush TV تماشا کن.</p>
+      <div class="actions"><a class="btn" href="#videos">تماشای ویدیوها</a><a class="btn secondary" href="#youtube">کانال یوتیوب</a></div>
+    </div>
+    <div class="hero-art" aria-label="تصویر تزئینی کروکودیل"><span class="bubble one">کلیپ‌های تازه!</span><div class="croc">🐊</div><span class="bubble two">بخند، تماشا کن، تکرار کن!</span></div>
+  </section>
+
+  <section id="videos">
+    <div class="section-head"><div><div class="eyebrow">کتابخانه ویدیو</div><h2>ویدیوهای Croc Rush</h2></div><span class="muted">برای شروع، نمونه‌ها را با ویدیوهای خودت عوض کن.</span></div>
+    <div class="tools">
+      <input id="search" type="search" placeholder="جست‌وجوی ویدیو..." aria-label="جست‌وجوی ویدیو">
+      <div class="chips">
+        <button class="chip active" data-filter="all">همه</button>
+        <button class="chip" data-filter="comedy">طنز</button>
+        <button class="chip" data-filter="adventure">ماجراجویی</button>
+        <button class="chip" data-filter="shorts">شورت</button>
+      </div>
+    </div>
+    <div class="grid" id="videoGrid">
+      <a class="card video" data-category="comedy" data-title="کروکودیل و ماشین عجیب" href="#youtube">
+        <div class="thumb">🚗🐊<span class="play">▶</span></div><div class="cardbody"><h3>کروکودیل و ماشین عجیب</h3><div class="tag">طنز · نمونه</div></div>
+      </a>
+      <a class="card video" data-category="adventure" data-title="تعقیب و گریز غیرمنتظره" href="#youtube">
+        <div class="thumb">🏁🐊<span class="play">▶</span></div><div class="cardbody"><h3>تعقیب و گریز غیرمنتظره</h3><div class="tag">ماجراجویی · نمونه</div></div>
+      </a>
+      <a class="card video" data-category="shorts" data-title="لحظه خنده دار کروک" href="#youtube">
+        <div class="thumb">😂🐊<span class="play">▶</span></div><div class="cardbody"><h3>لحظه خنده‌دار کروک</h3><div class="tag">شورت · نمونه</div></div>
+      </a>
+    </div>
+    <div class="empty" id="empty">ویدیویی با این عبارت پیدا نشد.</div>
+  </section>
+
+  <section id="about">
+    <div class="about"><div class="eyebrow">درباره Croc Rush TV</div><h2>سرگرمی کوتاه، داستان‌های غیرمنتظره</h2><p class="muted">این سایت خانه ویدیوهای سرگرم‌کننده Croc Rush است. ویدیوها و توضیحات این صفحه باید با محتوای اصلی و دارای مجوز خودت تکمیل شوند.</p></div>
+  </section>
+  <section id="youtube">
+    <div class="section-head"><div><div class="eyebrow">ما را دنبال کن</div><h2>کانال یوتیوب</h2></div></div>
+    <p class="muted">آدرس کانال خودت را در لینک زیر جایگزین کن: <strong style="color:var(--text)">youtube.com/@CrocRush927</strong></p>
+    <a class="btn" href="https://www.youtube.com/@CrocRush927" target="_blank" rel="noopener">رفتن به کانال Croc Rush</a>
+  </section>
+</main>
+<footer><div class="wrap foot"><span>© Croc Rush TV</span><span>ساخته‌شده برای تماشای راحت با موبایل</span></div></footer>
+<script>
+  const search = document.getElementById('search');
+  const cards = [...document.querySelectorAll('.video')];
+  const chips = [...document.querySelectorAll('.chip')];
+  const empty = document.getElementById('empty');
+  let filter = 'all';
+  function update(){
+    const q = search.value.trim().toLowerCase();
+    let count = 0;
+    cards.forEach(card=>{
+      const okFilter = filter === 'all' || card.dataset.category === filter;
+      const okSearch = card.dataset.title.toLowerCase().includes(q);
+      card.style.display = okFilter && okSearch ? '' : 'none';
+      if(okFilter && okSearch) count++;
+    });
+    empty.style.display = count ? 'none' : 'block';
+  }
+  search.addEventListener('input', update);
+  chips.forEach(chip=>chip.addEventListener('click',()=>{
+    filter=chip.dataset.filter;
+    chips.forEach(c=>c.classList.toggle('active',c===chip));
+    update();
+  }));
+</script>
+</body>
+</html>
