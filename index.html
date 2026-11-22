@@ -1,33 +1,63 @@
 
-<!doctype html>
+
+<!DOCTYPE html>
 <html lang="fa" dir="rtl">
 <head>
-<meta charset="utf-8">
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Croc Rush TV</title>
 <style>
-body{margin:0;background:#0d130f;color:#f4f7f1;font-family:Tahoma,Arial;text-align:center}
-header{padding:25px;background:#17251a}
-h1{color:#c7ff83}
-main{max-width:850px;margin:auto;padding:20px}
-.video{margin:25px 0;background:#17251a;padding:15px;border-radius:18px}
-iframe{width:100%;aspect-ratio:9/16;border:0;border-radius:12px}
-a{display:inline-block;background:#9be15d;color:#10200d;padding:13px 22px;border-radius:10px;text-decoration:none;font-weight:bold;margin:10px}
-p{color:#c5d0c4;line-height:2}
+*{box-sizing:border-box}
+body{margin:0;background:#080d09;color:#fff;font-family:Tahoma,Arial;line-height:1.8}
+header{background:#101b12;padding:18px;border-bottom:1px solid #385c32}
+.wrap{max-width:1000px;width:92%;margin:auto}
+.logo{font-size:25px;font-weight:bold;color:#c7ff83}
+.hero{text-align:center;padding:45px 10px;background:radial-gradient(circle,#284b25,#080d09 75%)}
+.hero h1{font-size:38px;color:#c7ff83}
+.hero p{color:#d1dfce}
+h2{color:#c7ff83}
+.btn{display:inline-block;background:#a5e96b;color:#10200c;padding:11px 20px;border-radius:10px;text-decoration:none;font-weight:bold;margin:8px}
+.panel{background:#142018;border:1px solid #304b32;border-radius:18px;padding:18px;margin:25px 0}
+.video{width:100%;aspect-ratio:9/16;border:0;border-radius:13px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:13px}
+.card{background:#1b2b20;border-radius:14px;padding:18px;text-align:center}
+.card span{font-size:38px}
+footer{text-align:center;color:#aab6aa;padding:25px;border-top:1px solid #304b32}
+@media(max-width:600px){.cards{grid-template-columns:1fr}.hero h1{font-size:29px}}
 </style>
 </head>
 <body>
-<header>
-<h1>🐊 CROC RUSH TV</h1>
-<p>دنیای کلیپ‌های کوتاه و سرگرم‌کننده</p>
-</header>
-<main>
-<h2>آخرین ویدیوی ما</h2>
-<div class="video">
-<iframe src="https://www.youtube-nocookie.com/embed/o6cpLQsZvmY" title="Croc Rush Video" allowfullscreen></iframe>
+<header><div class="wrap logo">🐊 CROC RUSH TV</div></header>
+<main class="wrap">
+<section class="hero">
+<h1>به دنیای Croc Rush خوش آمدی!</h1>
+<p>طنز، ماجراجویی و اتفاقات غیرمنتظره</p>
+<a class="btn" href="#videos">تماشای ویدیو</a>
+<a class="btn" href="https://www.youtube.com/@CrocRush927">کانال یوتیوب</a>
+</section>
+
+<section class="panel" id="videos">
+<h2>🔥 جدیدترین ویدیو</h2>
+<iframe class="video" src="https://www.youtube-nocookie.com/embed/o6cpLQsZvmY" title="Croc Rush video" allowfullscreen></iframe>
+<a class="btn" href="https://youtube.com/shorts/o6cpLQsZvmY" target="_blank">تماشا در یوتیوب</a>
+</section>
+
+<section class="panel">
+<h2>⭐ بخش‌های Croc Rush</h2>
+<div class="cards">
+<div class="card"><span>😂</span><h3>ویدیوهای طنز</h3></div>
+<div class="card"><span>🏎️</span><h3>ماجراجویی</h3></div>
+<div class="card"><span>🐊</span><h3>کلیپ‌های کروکودیل</h3></div>
 </div>
-<a href="https://www.youtube.com/@CrocRush927" target="_blank">ورود به کانال یوتیوب</a>
-<p>ویدیوهای طنز، ماجراجویی و لحظه‌های غیرمنتظره در Croc Rush TV</p>
+</section>
+
+<section class="panel">
+<h2>📢 ما را دنبال کن</h2>
+<p>ویدیوهای جدید Croc Rush را در کانال یوتیوب دنبال کن.</p>
+<a class="btn" href="https://www.youtube.com/@CrocRush927" target="_blank">مشاهده کانال</a>
+<button class="btn" onclick="navigator.clipboard.writeText(location.href)">اشتراک‌گذاری سایت</button>
+</section>
 </main>
+<footer>© 2026 Croc Rush TV | همه حقوق محفوظ است</footer>
 </body>
 </html>
