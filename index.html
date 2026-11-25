@@ -1,138 +1,151 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Croc Rush TV | Cartoon Comedy Adventures</title>
-<meta name="description" content="Enter Sunset Chaos City with Big Pearl and friends. Watch the funniest Croc Rush cartoon adventures!">
+<title>Croc Rush TV | Sunset Chaos City</title>
+<meta name="description" content="Watch original cartoon comedy adventures with Big Pearl and friends in Sunset Chaos City.">
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
-body{font-family:Arial,sans-serif;background:#101522;color:#fff;line-height:1.6}
-header{background:#111b2b;padding:18px 7%;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:15px}
-.logo{font-size:25px;font-weight:900;color:#39e6b0}
-.logo span{color:#ffbd45}
-nav a{color:#fff;text-decoration:none;margin:0 9px;font-size:14px}
-.hero{text-align:center;padding:85px 20px;background:linear-gradient(135deg,#172d42,#5b285c,#ed873b)}
-.hero h1{font-size:clamp(38px,7vw,68px);line-height:1.1;margin-bottom:18px}
-.hero h1 span{color:#ffcf56}
-.hero p{max-width:650px;margin:0 auto 25px;color:#fff;font-size:18px}
-.btn{display:inline-block;background:#39e6b0;color:#101522;padding:13px 25px;border-radius:30px;text-decoration:none;font-weight:bold}
-section{padding:65px 7%}
-.section-title{text-align:center;font-size:34px;margin-bottom:12px}
-.subtitle{text-align:center;color:#b8c3d5;margin-bottom:35px}
-.episodes{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:24px}
-.card{background:#1b2638;border-radius:16px;overflow:hidden;border:1px solid #34435a}
-.card img{width:100%;display:block;aspect-ratio:16/9;object-fit:cover}
-.card-content{padding:20px}
-.card h3{margin-bottom:8px;color:#ffca55}
-.card p{color:#c4cedc;font-size:14px;margin-bottom:16px}
-.watch{color:#39e6b0;text-decoration:none;font-weight:bold}
-.characters{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:20px}
-.character{background:#1b2638;padding:25px;border-radius:16px;text-align:center}
-.character .emoji{font-size:48px}
-.character h3{color:#ffca55;margin:10px}
-.about{text-align:center;background:#17283b}
-.about p{max-width:720px;margin:15px auto;color:#cbd5e1}
-footer{text-align:center;padding:30px 15px;background:#0b101a;color:#aab5c5}
-footer a{color:#39e6b0;text-decoration:none}
-@media(max-width:600px){header{justify-content:center}nav{text-align:center}nav a{display:inline-block;margin:5px}}
+html{scroll-behavior:smooth}
+body{font-family:Arial,sans-serif;background:#071426;color:#fff;line-height:1.6}
+header{padding:18px 7%;display:flex;justify-content:space-between;align-items:center;background:#09172c;position:sticky;top:0;z-index:10;border-bottom:1px solid #243956}
+.logo{font-size:25px;font-weight:900;color:#55e39b}
+.logo span{color:#ffb83f}
+nav{display:flex;gap:22px;flex-wrap:wrap}
+nav a{color:#fff;text-decoration:none;font-weight:bold;font-size:14px}
+nav a:hover{color:#ffbd45}
+.hero{min-height:440px;padding:75px 7%;display:flex;align-items:center;background:linear-gradient(90deg,rgba(5,15,32,.96),rgba(5,15,32,.5)),linear-gradient(135deg,#16364b,#8b4260,#f08b42)}
+.hero-content{max-width:600px}
+.hero h1{font-size:clamp(38px,6vw,65px);line-height:1.08;margin-bottom:20px}
+.hero h1 span{color:#ffbf45}
+.hero p{font-size:18px;color:#e4eaf2;margin-bottom:25px}
+.btn{display:inline-block;background:#ffc13e;color:#101827;text-decoration:none;font-weight:900;padding:13px 25px;border-radius:30px}
+.btn:hover{background:#ffe08a}
+section{padding:55px 7%}
+.heading{font-size:30px;margin-bottom:8px}
+.subheading{color:#aabbd0;margin-bottom:28px}
+.episodes,.characters{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:22px}
+.card{background:#10233c;border:1px solid #263e5c;border-radius:15px;overflow:hidden}
+.card img{width:100%;aspect-ratio:16/9;object-fit:cover;display:block}
+.card-body{padding:17px}
+.card h3{color:#ffca56;margin-bottom:7px}
+.card p{color:#bdcada;font-size:14px;margin-bottom:13px}
+.watch{color:#55e39b;text-decoration:none;font-weight:bold}
+.character{padding:25px;text-align:center;background:#10233c;border-radius:15px;border:1px solid #263e5c}
+.character .emoji{font-size:55px}
+.character h3{color:#ffca56;margin:10px 0}
+.character p{color:#bdcada;font-size:14px}
+.about{background:#0c1c32;text-align:center}
+.about p{max-width:700px;margin:15px auto 25px;color:#bdcada}
+.subscribe{display:inline-block;background:#ed3030;color:white;text-decoration:none;font-weight:bold;padding:14px 25px;border-radius:9px}
+footer{text-align:center;padding:25px;color:#aabbd0;font-size:13px}
+footer a{color:#55e39b;text-decoration:none}
+@media(max-width:650px){
+header{flex-direction:column;gap:13px}
+nav{justify-content:center;gap:13px}
+.hero{min-height:370px;padding:55px 7%}
+section{padding:42px 6%}
+}
 </style>
 </head>
 <body>
 
 <header>
-  <div class="logo">CROC <span>RUSH</span> TV 🐊</div>
-  <nav>
-    <a href="#home">Home</a>
-    <a href="#episodes">Episodes</a>
-    <a href="#characters">Characters</a>
-    <a href="#about">About</a>
-  </nav>
+<div class="logo">CROC <span>RUSH</span> TV 🐊</div>
+<nav>
+<a href="#home">Home</a>
+<a href="#episodes">Episodes</a>
+<a href="#characters">Characters</a>
+<a href="#about">About</a>
+</nav>
 </header>
 
 <section class="hero" id="home">
-  <h1>WELCOME TO <span>SUNSET CHAOS CITY!</span></h1>
-  <p>Crazy crocodile adventures, hilarious characters and unexpected twists. The chaos never ends!</p>
-  <a class="btn" href="#episodes">WATCH EPISODES</a>
+<div class="hero-content">
+<h1>WELCOME TO <span>SUNSET CHAOS CITY!</span></h1>
+<p>Crazy crocodile adventures, hilarious characters and unexpected twists. The chaos never ends!</p>
+<a class="btn" href="#episodes">▶ WATCH EPISODES</a>
+</div>
 </section>
 
 <section id="episodes">
-  <h2 class="section-title">🔥 LATEST EPISODES</h2>
-  <p class="subtitle">Watch the latest adventures from Croc Rush TV.</p>
+<h2 class="heading">LATEST EPISODES</h2>
+<p class="subheading">The latest adventures from Croc Rush TV.</p>
+<div class="episodes">
 
-  <div class="episodes">
+<div class="card">
+<a href="https://www.youtube.com/watch?v=o6cpLQsZvmY">
+<img src="https://i.ytimg.com/vi/o6cpLQsZvmY/hqdefault.jpg" alt="Episode 1">
+</a>
+<div class="card-body">
+<h3>Episode 1 – Sunset Chaos</h3>
+<p>The adventure begins in Sunset Chaos City. Nothing goes as planned!</p>
+<a class="watch" href="https://www.youtube.com/watch?v=o6cpLQsZvmY">▶ WATCH NOW</a>
+</div>
+</div>
 
-    <div class="card">
-      <a href="https://www.youtube.com/watch?v=o6cpLQsZvmY">
-        <img src="https://i.ytimg.com/vi/o6cpLQsZvmY/hqdefault.jpg" alt="Croc Rush Episode 1">
-      </a>
-      <div class="card-content">
-        <h3>Episode 1 – Sunset Chaos</h3>
-        <p>The adventure begins in Sunset Chaos City. Nothing goes as planned!</p>
-        <a class="watch" href="https://www.youtube.com/watch?v=o6cpLQsZvmY">▶ WATCH NOW</a>
-      </div>
-    </div>
+<div class="card">
+<a href="https://www.youtube.com/watch?v=bEdxD09pPY4">
+<img src="https://i.ytimg.com/vi/bEdxD09pPY4/hqdefault.jpg" alt="Episode 2">
+</a>
+<div class="card-body">
+<h3>Episode 2 – No Brakes Taxi</h3>
+<p>One taxi ride, zero brakes and a very unexpected ending!</p>
+<a class="watch" href="https://www.youtube.com/watch?v=bEdxD09pPY4">▶ WATCH NOW</a>
+</div>
+</div>
 
-    <div class="card">
-      <a href="https://www.youtube.com/watch?v=bEdxD09pPY4">
-        <img src="https://i.ytimg.com/vi/bEdxD09pPY4/hqdefault.jpg" alt="No Brakes Taxi">
-      </a>
-      <div class="card-content">
-        <h3>Episode 2 – No Brakes Taxi</h3>
-        <p>One taxi ride, zero brakes and a very unexpected ending!</p>
-        <a class="watch" href="https://www.youtube.com/watch?v=bEdxD09pPY4">▶ WATCH NOW</a>
-      </div>
-    </div>
+<div class="card">
+<img src="https://placehold.co/640x360/172b49/ffffff?text=COMING+SOON" alt="Coming soon">
+<div class="card-body">
+<h3>Episode 3 – Coming Soon</h3>
+<p>A brand-new crazy adventure is on the way!</p>
+<span class="watch">🐊 STAY TUNED</span>
+</div>
+</div>
 
-    <div class="card">
-      <img src="https://placehold.co/640x360/26364b/ffffff?text=COMING+SOON" alt="Coming soon">
-      <div class="card-content">
-        <h3>Episode 3 – Coming Soon</h3>
-        <p>A brand-new crazy adventure is on the way!</p>
-        <span class="watch">🐊 STAY TUNED</span>
-      </div>
-    </div>
-
-  </div>
+</div>
 </section>
 
 <section id="characters">
-  <h2 class="section-title">⭐ MEET THE CHARACTERS</h2>
-  <p class="subtitle">Meet the troublemakers of Sunset Chaos City!</p>
-
-  <div class="characters">
-    <div class="character">
-      <div class="emoji">🐊</div>
-      <h3>BIG PEARL</h3>
-      <p>A cool green crocodile with a gold chain and a talent for chaos.</p>
-    </div>
-    <div class="character">
-      <div class="emoji">😎</div>
-      <h3>RICKY</h3>
-      <p>A nervous guy who always finds himself in the craziest situations.</p>
-    </div>
-    <div class="character">
-      <div class="emoji">👮</div>
-      <h3>OFFICER DONNA</h3>
-      <p>The police officer trying to keep the city under control.</p>
-    </div>
-  </div>
+<h2 class="heading">MEET THE CHARACTERS</h2>
+<p class="subheading">Meet the troublemakers of Sunset Chaos City!</p>
+<div class="characters">
+<div class="character">
+<div class="emoji">🐊</div>
+<h3>BIG PEARL</h3>
+<p>A cool green crocodile with a gold chain and a talent for chaos.</p>
+</div>
+<div class="character">
+<div class="emoji">😎</div>
+<h3>RICKY</h3>
+<p>A nervous guy who always finds himself in crazy situations.</p>
+</div>
+<div class="character">
+<div class="emoji">👮</div>
+<h3>OFFICER DONNA</h3>
+<p>The police officer trying to keep the city under control.</p>
+</div>
+</div>
 </section>
 
 <section class="about" id="about">
-  <h2 class="section-title">ABOUT CROC RUSH TV</h2>
-  <p>Welcome to Croc Rush TV, an original cartoon comedy series set in Sunset Chaos City. Follow Big Pearl and friends through wild adventures, funny moments and unexpected surprises.</p>
-  <a class="btn" href="https://www.youtube.com/@CrocRush927" target="_blank" rel="noopener">SUBSCRIBE ON YOUTUBE</a>
+<h2 class="heading">ABOUT CROC RUSH TV</h2>
+<p>Welcome to Croc Rush TV, an original cartoon comedy series set in Sunset Chaos City. Follow Big Pearl and friends through wild adventures, funny moments and unexpected surprises.</p>
+<a class="subscribe" href="https://www.youtube.com/@CrocRush927" target="_blank" rel="noopener">▶ SUBSCRIBE ON YOUTUBE</a>
 </section>
 
 <footer>
-  <p>© 2026 Croc Rush TV. All rights reserved.</p>
-  <p>Original cartoon comedy adventures.</p>
-  <p><a href="https://www.youtube.com/@CrocRush927">YouTube Channel</a></p>
+<p>© 2026 Croc Rush TV. All rights reserved.</p>
+<p>Original cartoon comedy adventures.</p>
+<p><a href="https://www.youtube.com/@CrocRush927">YouTube Channel</a></p>
 </footer>
 
 </body>
 </html>
+
 
 
 
