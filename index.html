@@ -4,96 +4,29 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Croc Rush TV | Official Website</title>
-<meta name="description" content="Watch Croc Rush original cartoon comedy adventures in Sunset Chaos City.">
+<title>Croc Rush TV | Sunset Chaos City</title>
+<meta name="description" content="Watch original cartoon comedy adventures from Croc Rush TV. The chaos never ends!">
 <style>
 *{box-sizing:border-box}
-body{
-margin:0;
-background:#101827;
-color:white;
-font-family:Arial,sans-serif;
-}
-header{
-text-align:center;
-padding:22px;
-background:#07111f;
-border-bottom:3px solid #00e5b0;
-}
-header h1{
-color:#00e5b0;
-font-size:34px;
-margin:5px;
-}
-.hero{
-text-align:center;
-padding:25px 15px 45px;
-background:linear-gradient(135deg,#102c40,#075c58);
-}
-.poster{
-display:block;
-width:100%;
-max-width:850px;
-height:auto;
-margin:15px auto;
-border-radius:16px;
-border:2px solid #00e5b0;
-}
-.hero h2{font-size:30px}
-.btn{
-display:inline-block;
-background:#00d6a0;
-color:#07111f;
-padding:12px 22px;
-border-radius:8px;
-text-decoration:none;
-font-weight:bold;
-margin-top:10px;
-}
-.container{
-max-width:1050px;
-margin:auto;
-padding:25px 15px;
-}
-.section-title{
-text-align:center;
-color:#00e5b0;
-margin:30px;
-}
-.episodes{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-gap:20px;
-}
-.card{
-background:#1e293b;
-border-radius:15px;
-overflow:hidden;
-text-align:center;
-padding:20px 12px;
-}
-.thumb{
-height:140px;
-display:flex;
-align-items:center;
-justify-content:center;
-font-size:60px;
-background:linear-gradient(135deg,#f97316,#0d9488);
-border-radius:10px;
-}
-.card h3{color:#00e5b0}
-.card p{color:#cbd5e1}
-.about{
-text-align:center;
-padding:35px 15px;
-color:#cbd5e1;
-}
-footer{
-text-align:center;
-background:#07111f;
-padding:25px;
-color:#94a3b8;
-}
+body{margin:0;background:#10151d;color:white;font-family:Arial,sans-serif}
+header{text-align:center;padding:35px 16px 20px;background:linear-gradient(135deg,#ff7b22,#ed3d62,#12b8b0)}
+header h1{font-size:38px;margin:0 0 10px;font-weight:900}
+header p{margin:0;font-size:16px}
+.poster{display:block;width:100%;max-width:900px;margin:22px auto;border-radius:16px}
+main{max-width:1100px;margin:auto;padding:20px}
+h2{text-align:center;color:#ffd166;font-size:27px}
+.intro{text-align:center;color:#d6dce5;line-height:1.7}
+.episodes{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;margin-top:25px}
+.card{background:#202936;border-radius:15px;overflow:hidden;border:1px solid #344252;transition:.2s}
+.card:hover{transform:translateY(-4px)}
+.card img{width:100%;aspect-ratio:16/9;object-fit:cover;display:block;background:#303b49}
+.card-content{padding:15px}
+.card h3{margin:0 0 9px;color:#ffd166}
+.card p{color:#d0d7df;font-size:14px;min-height:35px}
+.btn{display:block;text-align:center;text-decoration:none;background:#11b8ad;color:#07151a;padding:11px;border-radius:8px;font-weight:bold}
+.about{text-align:center;margin:40px 0;padding:25px;background:#202936;border-radius:15px;line-height:1.8}
+footer{text-align:center;padding:25px;color:#aeb8c5;background:#0b1017}
+footer a{color:#ffd166;text-decoration:none}
 </style>
 </head>
 <body>
@@ -101,72 +34,75 @@ color:#94a3b8;
 <header>
 <h1>🐊 CROC RUSH TV</h1>
 <p>Welcome to Sunset Chaos City</p>
+<p><strong>THE CHAOS NEVER ENDS!</strong></p>
 </header>
 
-<section class="hero">
-
-<img
-class="poster"
+<main>
+<img class="poster"
 src="https://crocrush927.github.io/Croc-rush-tv/croc-rush-poster.png"
-alt="Croc Rush Official Poster">
+alt="Croc Rush TV Poster">
 
-<h2>THE CHAOS NEVER ENDS!</h2>
-<p>Original Cartoon Comedy Adventures</p>
+<h2>🎬 WATCH EPISODES</h2>
+<p class="intro">Original Cartoon Comedy Adventures<br>
+Fast action, crazy characters and unexpected endings!</p>
 
-<a class="btn" href="#episodes">WATCH EPISODES</a>
+<section class="episodes">
+
+<div class="card">
+<img src="https://img.youtube.com/vi/o6cpLQsZvmY/hqdefault.jpg" alt="Episode 1 thumbnail">
+<div class="card-content">
+<h3>Episode 1</h3>
+<p>The first chaos begins in Sunset Chaos City!</p>
+<a class="btn" href="episode-1.html">WATCH EPISODE</a>
+</div>
+</div>
+
+<div class="card">
+<img src="https://img.youtube.com/vi/bEdxD09pPY4/hqdefault.jpg" alt="Episode 2 thumbnail">
+<div class="card-content">
+<h3>Episode 2 - NO BRAKES TAXI</h3>
+<p>A taxi ride that nobody will forget!</p>
+<a class="btn" href="episode-2.html">WATCH EPISODE</a>
+</div>
+</div>
+
+<div class="card">
+<img src="https://img.youtube.com/vi/tj0pMf1ecso/hqdefault.jpg" alt="Episode 3 thumbnail">
+<div class="card-content">
+<h3>Episode 3</h3>
+<p>Another wild adventure with Big Pearl!</p>
+<a class="btn" href="episode-3.html">WATCH EPISODE</a>
+</div>
+</div>
+
+<div class="card">
+<img src="https://img.youtube.com/vi/otnIm18TA0s/hqdefault.jpg" alt="Episode 4 thumbnail">
+<div class="card-content">
+<h3>Episode 4</h3>
+<p>The chaos continues in Sunset Chaos City!</p>
+<a class="btn" href="episode-4.html">WATCH EPISODE</a>
+</div>
+</div>
 
 </section>
-
-<main class="container" id="episodes">
-
-<h2 class="section-title">🎬 LATEST EPISODES</h2>
-
-<div class="episodes">
-
-<div class="card">
-<div class="thumb">🐊🚗</div>
-<h3>EPISODE 01</h3>
-<p>Our first crazy adventure!</p>
-<a class="btn" href="episode-1.html">WATCH NOW</a>
-</div>
-
-<div class="card">
-<div class="thumb">🚕💨</div>
-<h3>EPISODE 02</h3>
-<p>NO BRAKES TAXI!</p>
-<a class="btn" href="episode-2.html">WATCH NOW</a>
-</div>
-
-<div class="card">
-<div class="thumb">🌇🐊</div>
-<h3>EPISODE 03</h3>
-<p>Sunset Chaos continues!</p>
-<a class="btn" href="episode-3.html">WATCH NOW</a>
-</div>
-
-<div class="card">
-<div class="thumb">🏙️🚘</div>
-<h3>EPISODE 04</h3>
-<p>Another wild adventure!</p>
-<a class="btn" href="episode-4.html">WATCH NOW</a>
-</div>
-
-</div>
-</main>
 
 <section class="about">
-<h2>ABOUT CROC RUSH TV</h2>
-<p>Funny characters, crazy adventures and unexpected surprises!</p>
-<p>New chaos is coming soon!</p>
+<h2>ABOUT CROC RUSH</h2>
+<p>Welcome to Croc Rush TV! Meet Big Pearl and the crew in a world of original cartoon comedy, crazy adventures and unexpected twists.</p>
+<p>New chaos, new laughs, every episode!</p>
+<a class="btn" href="https://www.youtube.com/@CrocRush927">SUBSCRIBE ON YOUTUBE</a>
 </section>
+</main>
 
 <footer>
-<p>© 2026 Croc Rush TV</p>
-<p>Original Cartoon Comedy Universe</p>
+<p>© 2026 Croc Rush TV. All rights reserved.</p>
+<p>Original cartoon comedy entertainment.</p>
 </footer>
 
 </body>
 </html>
+
+
 
 
 
