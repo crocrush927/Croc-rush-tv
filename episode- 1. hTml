@@ -1,0 +1,160 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Episode 1 | Croc Rush TV</title>
+  <meta name="description" content="Watch Episode 1 of Croc Rush TV, an original cartoon comedy adventure featuring Big Pearl and the crazy world of Sunset Chaos City.">
+
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://crocrush927.github.io/Croc-rush-tv/episode-1.html">
+
+  <meta property="og:title" content="Episode 1 | Croc Rush TV">
+  <meta property="og:description" content="Enter the crazy cartoon world of Croc Rush TV. Watch Episode 1 now!">
+  <meta property="og:type" content="video.other">
+  <meta property="og:url" content="https://crocrush927.github.io/Croc-rush-tv/episode-1.html">
+
+  <meta name="theme-color" content="#101820">
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: #101820;
+      color: white;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+    }
+
+    header {
+      padding: 22px 15px;
+      text-align: center;
+      background: #172936;
+      border-bottom: 3px solid #00d5bd;
+    }
+
+    header h1 {
+      margin: 0;
+      color: #00e0c3;
+      font-size: 28px;
+    }
+
+    .container {
+      width: 92%;
+      max-width: 850px;
+      margin: 35px auto;
+    }
+
+    .episode {
+      background: #1b2b38;
+      padding: 22px;
+      border-radius: 15px;
+      text-align: center;
+    }
+
+    .episode h2 {
+      color: #00e0c3;
+      font-size: 27px;
+    }
+
+    .video {
+      width: 100%;
+      max-width: 390px;
+      aspect-ratio: 9 / 16;
+      margin: 20px auto;
+      overflow: hidden;
+      border-radius: 14px;
+      background: #000;
+    }
+
+    .video iframe {
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    .watch {
+      display: inline-block;
+      margin: 15px 0;
+      padding: 13px 25px;
+      border-radius: 30px;
+      background: #00d5bd;
+      color: #101820;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .watch:hover {
+      background: #ffffff;
+    }
+
+    .back {
+      display: block;
+      margin-top: 25px;
+      color: #00e0c3;
+      text-decoration: none;
+    }
+
+    footer {
+      margin-top: 45px;
+      padding: 20px;
+      text-align: center;
+      background: #172936;
+      color: #b8c7d1;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>🐊 CROC RUSH TV</h1>
+    <p>Welcome to Sunset Chaos City</p>
+  </header>
+
+  <main class="container">
+    <section class="episode">
+
+      <h2>Episode 1</h2>
+
+      <p>
+        Welcome to the first crazy adventure of Croc Rush!
+        Enter Sunset Chaos City and discover an original
+        cartoon comedy world full of unexpected moments.
+      </p>
+
+      <div class="video">
+        <iframe
+          src="https://www.youtube.com/embed/o6cpLQsZvmY"
+          title="Croc Rush TV Episode 1"
+          loading="lazy"
+          allowfullscreen>
+        </iframe>
+      </div>
+
+      <a class="watch"
+         href="https://youtube.com/shorts/o6cpLQsZvmY"
+         target="_blank"
+         rel="noopener">
+        WATCH ON YOUTUBE
+      </a>
+
+      <a class="back" href="./index.html">
+        ← Back to Croc Rush TV Home
+      </a>
+
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Croc Rush TV. All Rights Reserved.</p>
+    <p>Original Cartoon Comedy Adventures</p>
+  </footer>
+
+</body>
+</html>
