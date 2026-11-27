@@ -1,233 +1,245 @@
 
-<!doctype html>
-<html lang="fa" dir="rtl">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Croc Rush TV؛ ویدیوهای کوتاه و سرگرم‌کننده.">
-<meta name="theme-color" content="#101712">
-<title>Croc Rush TV | ویدیوهای کوتاه</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Croc Rush TV | Funny Crocodile Cartoon Adventures</title>
+
+<meta name="description" content="Welcome to Croc Rush TV! Watch funny crocodile cartoon adventures, crazy comedy shorts and unexpected stories.">
+<meta name="keywords" content="Croc Rush, Croc Rush TV, crocodile cartoon, funny cartoon shorts, cartoon comedy">
+<meta name="robots" content="index, follow">
+
+<link rel="canonical" href="https://crocrush927.github.io/Croc-rush-tv/">
+
+<meta property="og:title" content="Croc Rush TV">
+<meta property="og:description" content="Funny Cartoon Adventures and Crazy Comedy!">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://crocrush927.github.io/Croc-rush-tv/">
+<meta property="og:image" content="https://img.youtube.com/vi/o6cpLQsZvmY/hqdefault.jpg">
 
 <style>
-:root {
---bg:#0d130f;
---panel:#151f18;
---green:#9be15d;
---lime:#c7ff83;
---text:#f4f7f1;
---muted:#aab6aa;
---line:#2b3b2e;
-}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{
 margin:0;
-background:radial-gradient(circle at 85% -10%,#263b24 0,transparent 34%),var(--bg);
-color:var(--text);
-font-family:Tahoma,Arial,sans-serif;
-line-height:1.7;
+font-family:Arial,sans-serif;
+background:#10151b;
+color:white;
 }
-a{color:inherit;text-decoration:none}
-.wrap{width:min(1100px,92%);margin:auto}
 header{
-position:relative;
-background:#0d130f;
-border-bottom:1px solid var(--line);
-}
-.nav{
-display:flex;
-align-items:center;
-justify-content:space-between;
-gap:16px;
-padding:13px 0;
-}
-.brand{
-display:flex;
-align-items:center;
-gap:10px;
-font-weight:900;
-font-size:1.1rem;
+background:#17232c;
+padding:20px 12px;
+text-align:center;
+border-bottom:3px solid #39d98a;
 }
 .logo{
-display:grid;
-place-items:center;
-width:42px;
-height:42px;
-border-radius:14px;
-background:linear-gradient(135deg,var(--lime),#4c9c36);
-color:#10200d;
-font-size:24px;
+font-size:29px;
+font-weight:bold;
+color:#43e58c;
 }
-.navlinks{
-display:flex;
-gap:18px;
-color:var(--muted);
-font-size:.92rem;
+nav{margin-top:15px}
+nav a{
+color:white;
+text-decoration:none;
+margin:8px;
+font-size:14px;
 }
 .hero{
-padding:48px 0 32px;
-display:grid;
-grid-template-columns:1.15fr .85fr;
-gap:28px;
-align-items:center;
+text-align:center;
+padding:65px 18px;
+background:linear-gradient(135deg,#173c32,#10151b);
 }
-.eyebrow{color:var(--lime);font-weight:bold;font-size:.88rem}
-h1{font-size:clamp(2rem,5vw,3.6rem);line-height:1.2;margin:10px 0 14px}
-.hero p,.muted{color:var(--muted)}
-.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:22px}
+.hero h1{
+font-size:34px;
+color:#50e99a;
+line-height:1.5;
+}
+.hero p{
+line-height:2;
+color:#ddd;
+}
 .btn{
 display:inline-block;
-padding:11px 18px;
-border-radius:12px;
+background:#36d989;
+color:#102019;
+padding:13px 22px;
+border-radius:9px;
+text-decoration:none;
 font-weight:bold;
-background:var(--green);
-color:#13200f;
+margin:8px;
 }
-.btn.secondary{
-background:#1d2a20;
-border:1px solid var(--line);
-color:var(--text);
+section{padding:38px 16px}
+h2{
+text-align:center;
+color:#50e99a;
+margin-bottom:30px;
 }
-.hero-art{
-min-height:220px;
-border:1px solid #49643b;
-border-radius:26px;
-background:linear-gradient(145deg,#294728,#132016 70%);
+.videos{
 display:grid;
-place-items:center;
-font-size:8rem;
+grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+gap:20px;
+max-width:1100px;
+margin:auto;
 }
-section{padding:22px 0 34px}
-.section-head{margin-bottom:16px}
-h2{margin:0;font-size:1.45rem}
-.video-card{
-max-width:390px;
-margin:0 auto;
-background:var(--panel);
-border:1px solid var(--line);
-border-radius:20px;
-padding:14px;
-}
-.player{
-width:100%;
-aspect-ratio:9/16;
-background:#000;
+.card{
+background:#1d2933;
 border-radius:14px;
 overflow:hidden;
+text-align:center;
+border:1px solid #34434e;
+padding-bottom:20px;
+transition:transform .2s;
 }
-.player iframe{
+.card:hover{transform:translateY(-4px)}
+.card img{
 width:100%;
-height:100%;
-border:0;
 display:block;
+aspect-ratio:16/9;
+object-fit:cover;
 }
-.video-info{padding:12px 4px 2px}
-.video-info h3{margin:0 0 5px}
-.tag{color:var(--lime);font-size:.82rem}
+.card h3{
+padding:0 10px;
+font-size:18px;
+}
+.card p{
+color:#bbb;
+font-size:14px;
+}
 .about{
-background:linear-gradient(120deg,#17251a,#111a13);
-border:1px solid var(--line);
-border-radius:20px;
-padding:22px;
+text-align:center;
+line-height:2;
+max-width:750px;
+margin:auto;
+color:#ddd;
+}
+.subscribe{
+text-align:center;
+padding:45px 15px;
+background:#173c32;
 }
 footer{
-border-top:1px solid var(--line);
-padding:25px 0;
-color:var(--muted);
-font-size:.86rem;
-}
-@media(max-width:760px){
-.hero{grid-template-columns:1fr;padding-top:30px}
-.hero-art{min-height:180px}
-.navlinks{gap:10px;font-size:.8rem}
+background:#17232c;
+text-align:center;
+padding:25px;
+color:#aaa;
+line-height:2;
 }
 </style>
 </head>
 
 <body>
+
 <header>
-<div class="wrap nav">
-<a class="brand" href="#">
-<span class="logo">🐊</span>
-<span>CROC RUSH <span style="color:var(--lime)">TV</span></span>
-</a>
-<nav class="navlinks">
-<a href="#videos">ویدیوها</a>
-<a href="#about">درباره ما</a>
-<a href="#youtube">یوتیوب</a>
+<div class="logo">🐊 CROC RUSH TV</div>
+<nav>
+<a href="#home">Home</a>
+<a href="#videos">Episodes</a>
+<a href="#about">About</a>
+<a href="https://www.youtube.com/@CrocRush927">YouTube</a>
 </nav>
-</div>
 </header>
 
-<main class="wrap">
+<main>
 
-<section class="hero">
-<div>
-<div class="eyebrow">دنیای کلیپ‌های کوتاه و بامزه</div>
-<h1>آماده‌ای برای یک<br>
-<span style="color:var(--lime)">ماجرای کروکودیلی؟</span>
-</h1>
-<p>ویدیوهای کوتاه، لحظه‌های خنده‌دار و ماجراهای غیرمنتظره را در Croc Rush TV تماشا کن.</p>
-<div class="actions">
-<a class="btn" href="#videos">تماشای ویدیو</a>
-<a class="btn secondary" href="https://www.youtube.com/@CrocRush927" target="_blank" rel="noopener">کانال یوتیوب</a>
+<div class="hero" id="home">
+<h1>WELCOME TO CROC RUSH TV!</h1>
+<p>
+Ready for a wild crocodile adventure?
+<br>
+Funny Cartoon Adventures, Crazy Comedy and Unexpected Stories!
+</p>
+<a class="btn" href="#videos">WATCH EPISODES</a>
+<a class="btn" href="https://www.youtube.com/@CrocRush927">YOUTUBE CHANNEL</a>
 </div>
-</div>
-<div class="hero-art" aria-label="کروکودیل">🐊</div>
-</section>
 
 <section id="videos">
-<div class="section-head">
-<div class="eyebrow">کتابخانه ویدیو</div>
-<h2>اولین ویدیوی Croc Rush</h2>
+<h2>🎬 OUR VIDEO LIBRARY</h2>
+
+<div class="videos">
+
+<div class="card">
+<a href="https://youtube.com/shorts/o6cpLQsZvmY" target="_blank" rel="noopener">
+<img src="https://img.youtube.com/vi/o6cpLQsZvmY/hqdefault.jpg" alt="Croc Rush Episode 1">
+</a>
+<h3>🐊 EPISODE 1 - FIRST CROC RUSH</h3>
+<p>The first crazy Croc Rush adventure!</p>
+<a class="btn" href="https://youtube.com/shorts/o6cpLQsZvmY" target="_blank" rel="noopener">WATCH NOW</a>
 </div>
 
-<article class="video-card">
-<div class="player">
-<iframe
-src="https://www.youtube-nocookie.com/embed/o6cpLQsZvmY"
-title="Croc Rush TV - YouTube Short"
-loading="lazy"
-width="360"
-height="640"
-referrerpolicy="strict-origin-when-cross-origin"
-allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-allowfullscreen>
-</iframe>
+<div class="card">
+<a href="https://youtube.com/shorts/bEdxD09pPY4" target="_blank" rel="noopener">
+<img src="https://img.youtube.com/vi/bEdxD09pPY4/hqdefault.jpg" alt="Croc Rush Episode 2">
+</a>
+<h3>🚕 EPISODE 2 - NO BRAKES TAXI</h3>
+<p>A crazy taxi adventure!</p>
+<a class="btn" href="https://youtube.com/shorts/bEdxD09pPY4" target="_blank" rel="noopener">WATCH NOW</a>
 </div>
 
-<div class="video-info">
-<h3>اولین کلیپ Croc Rush</h3>
-<div class="tag">YouTube Short · Croc Rush TV</div>
-<p class="muted">برای تماشای ویدیو در یوتیوب، از دکمه زیر استفاده کن.</p>
-<a class="btn" href="https://youtube.com/shorts/o6cpLQsZvmY" target="_blank" rel="noopener">تماشا در یوتیوب</a>
+<div class="card">
+<a href="https://youtube.com/shorts/tj0pMf1ecso" target="_blank" rel="noopener">
+<img src="https://img.youtube.com/vi/tj0pMf1ecso/hqdefault.jpg" alt="Croc Rush Episode 3">
+</a>
+<h3>🐊 EPISODE 3 - CROC RUSH</h3>
+<p>Another crazy cartoon adventure!</p>
+<a class="btn" href="https://youtube.com/shorts/tj0pMf1ecso" target="_blank" rel="noopener">WATCH NOW</a>
 </div>
-</article>
+
+<div class="card">
+<a href="https://youtube.com/shorts/otnIm18TA0s" target="_blank" rel="noopener">
+<img src="https://img.youtube.com/vi/otnIm18TA0s/hqdefault.jpg" alt="Croc Rush Episode 4">
+</a>
+<h3>🔥 EPISODE 4 - CROC RUSH</h3>
+<p>New episode, new chaos!</p>
+<a class="btn" href="https://youtube.com/shorts/otnIm18TA0s" target="_blank" rel="noopener">WATCH NOW</a>
+</div>
+
+<div class="card">
+<a href="https://youtube.com/shorts/HNXXIhatf_M" target="_blank" rel="noopener">
+<img src="https://img.youtube.com/vi/HNXXIhatf_M/hqdefault.jpg" alt="Croc Rush Episode 5">
+</a>
+<h3>⚡ EPISODE 5 - CROC RUSH</h3>
+<p>The next crazy adventure!</p>
+<a class="btn" href="https://youtube.com/shorts/HNXXIhatf_M" target="_blank" rel="noopener">WATCH NOW</a>
+</div>
+
+</div>
 </section>
 
 <section id="about">
+<h2>ABOUT CROC RUSH TV</h2>
 <div class="about">
-<div class="eyebrow">درباره Croc Rush TV</div>
-<h2>سرگرمی کوتاه، داستان‌های غیرمنتظره</h2>
-<p class="muted">به دنیای Croc Rush خوش آمدی! برای دیدن کلیپ‌های تازه، این صفحه را دوباره باز کن.</p>
+<h3>THE CHAOS NEVER ENDS!</h3>
+<p>
+Welcome to Croc Rush TV!
+Enjoy original cartoon comedy, funny crocodile adventures,
+unexpected moments and entertaining short videos.
+Follow Ricky and Big Pearl on their crazy adventures!
+</p>
 </div>
 </section>
 
-<section id="youtube">
-<div class="section-head">
-<div class="eyebrow">ما را دنبال کن</div>
-<h2>کانال یوتیوب</h2>
-</div>
-<a class="btn" href="https://www.youtube.com/@CrocRush927" target="_blank" rel="noopener">رفتن به کانال Croc Rush</a>
+<section class="subscribe">
+<h2>🐊 DON'T MISS THE NEXT ADVENTURE!</h2>
+<p>Visit our YouTube channel for more funny cartoon videos.</p>
+<a class="btn" href="https://www.youtube.com/@CrocRush927" target="_blank" rel="noopener">SUBSCRIBE ON YOUTUBE</a>
 </section>
 
 </main>
 
 <footer>
-<div class="wrap">© Croc Rush TV · ساخته‌شده برای تماشای راحت با موبایل</div>
+© 2026 CROC RUSH TV
+<br>
+Original Cartoon Comedy Adventures
+<br>
+Made for mobile entertainment
 </footer>
+
 </body>
 </html>
+
+
 
 
 
