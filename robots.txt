@@ -1,0 +1,5 @@
+
+User-agent: *
+Allow: /
+
+Sitemap: https://crocrush927.github.io/Croc-rush-tv/sitemap.xml
