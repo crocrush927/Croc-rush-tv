@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -40,44 +41,56 @@
 <style>
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
+
 body{
 margin:0;
 font-family:Arial,sans-serif;
 background:#10151b;
 color:white;
 }
+
 header{
 background:#17232c;
 padding:20px 12px;
 text-align:center;
 border-bottom:3px solid #39d98a;
 }
+
 .logo{
 font-size:29px;
 font-weight:bold;
 color:#43e58c;
 }
+
 nav{margin-top:15px}
+
 nav a{
 color:white;
 text-decoration:none;
 margin:8px;
 font-size:14px;
+display:inline-block;
 }
+
+nav a:hover{color:#43e58c}
+
 .hero{
 text-align:center;
 padding:65px 18px;
 background:linear-gradient(135deg,#173c32,#10151b);
 }
+
 .hero h1{
 font-size:34px;
 color:#50e99a;
 line-height:1.5;
 }
+
 .hero p{
 line-height:2;
 color:#ddd;
 }
+
 .btn{
 display:inline-block;
 background:#36d989;
@@ -88,12 +101,17 @@ text-decoration:none;
 font-weight:bold;
 margin:8px;
 }
+
+.btn:hover{background:#50e99a}
+
 section{padding:38px 16px}
+
 h2{
 text-align:center;
 color:#50e99a;
 margin-bottom:30px;
 }
+
 .videos{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
@@ -101,6 +119,7 @@ gap:20px;
 max-width:1100px;
 margin:auto;
 }
+
 .card{
 background:#1d2933;
 border-radius:14px;
@@ -110,21 +129,26 @@ border:1px solid #34434e;
 padding-bottom:20px;
 transition:transform .2s;
 }
+
 .card:hover{transform:translateY(-4px)}
+
 .card img{
 width:100%;
 display:block;
 aspect-ratio:16/9;
 object-fit:cover;
 }
+
 .card h3{
 padding:0 10px;
 font-size:18px;
 }
+
 .card p{
 color:#bbb;
 font-size:14px;
 }
+
 .about{
 text-align:center;
 line-height:2;
@@ -132,21 +156,33 @@ max-width:750px;
 margin:auto;
 color:#ddd;
 }
+
 .subscribe{
 text-align:center;
 padding:45px 15px;
 background:#173c32;
 }
+
 footer{
 background:#17232c;
 text-align:center;
-padding:25px;
+padding:30px 15px;
 color:#aaa;
 line-height:2;
 }
+
+footer a{
+color:#50e99a;
+text-decoration:none;
+margin:8px 12px;
+display:inline-block;
+}
+
+footer a:hover{color:white}
+
 @media(max-width:600px){
 .hero h1{font-size:27px}
-nav a{display:inline-block;margin:7px}
+nav a{margin:7px}
 }
 </style>
 </head>
@@ -155,11 +191,14 @@ nav a{display:inline-block;margin:7px}
 
 <header>
 <div class="logo">🐊 CROC RUSH TV</div>
+
 <nav>
 <a href="#home">Home</a>
 <a href="#videos">Episodes</a>
 <a href="#about">About</a>
 <a href="https://www.youtube.com/@CrocRush927" target="_blank" rel="noopener">YouTube</a>
+<a href="./privacy-policy.html">Privacy Policy</a>
+<a href="./contact.html">Contact Us</a>
 </nav>
 </header>
 
@@ -167,6 +206,7 @@ nav a{display:inline-block;margin:7px}
 
 <section class="hero" id="home">
 <h1>WELCOME TO CROC RUSH TV!</h1>
+
 <p>
 Welcome to Sunset Chaos City!
 <br>
@@ -174,8 +214,12 @@ Meet Big Pearl, Ricky and the crew in original cartoon comedy adventures.
 <br>
 Funny crocodile stories, crazy moments and unexpected twists!
 </p>
+
 <a class="btn" href="#videos">WATCH ALL EPISODES</a>
-<a class="btn" href="https://www.youtube.com/@CrocRush927" target="_blank" rel="noopener">VISIT YOUTUBE CHANNEL</a>
+
+<a class="btn" href="https://www.youtube.com/@CrocRush927" target="_blank" rel="noopener">
+VISIT YOUTUBE CHANNEL
+</a>
 </section>
 
 <section id="videos">
@@ -233,8 +277,10 @@ Funny crocodile stories, crazy moments and unexpected twists!
 
 <section id="about">
 <h2>ABOUT CROC RUSH TV</h2>
+
 <div class="about">
 <h3>THE CHAOS NEVER ENDS!</h3>
+
 <p>
 Croc Rush TV is an original cartoon comedy series set in Sunset Chaos City.
 Follow Ricky and Big Pearl, a friendly green crocodile, through funny adventures,
@@ -246,8 +292,12 @@ Discover new episodes and enjoy original cartoon comedy shorts!
 
 <section class="subscribe">
 <h2>🐊 DON'T MISS THE NEXT ADVENTURE!</h2>
+
 <p>Subscribe to Croc Rush TV on YouTube and discover more funny cartoon adventures.</p>
-<a class="btn" href="https://www.youtube.com/@CrocRush927" target="_blank" rel="noopener">SUBSCRIBE ON YOUTUBE</a>
+
+<a class="btn" href="https://www.youtube.com/@CrocRush927" target="_blank" rel="noopener">
+SUBSCRIBE ON YOUTUBE
+</a>
 </section>
 
 </main>
@@ -258,10 +308,21 @@ Discover new episodes and enjoy original cartoon comedy shorts!
 Original Cartoon Comedy Adventures
 <br>
 Official Website
+<br><br>
+
+<a href="./privacy-policy.html">Privacy Policy</a>
+<a href="./contact.html">Contact Us</a>
+
+<br>
+
+<a href="https://www.youtube.com/@CrocRush927" target="_blank" rel="noopener">
+Official YouTube Channel
+</a>
 </footer>
 
 </body>
 </html>
+
 
 
 
